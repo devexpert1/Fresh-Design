@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Klavika Rg';
+    src: url('../fonts/Klavika-Regular.woff2') format('woff2'),
+        url('../fonts/Klavika-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika Lt';
+    src: url('../fonts/Klavika-Light.woff2') format('woff2'),
+        url('../fonts/Klavika-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika Bd';
+    src: url('../fonts/Klavika-Bold.woff2') format('woff2'),
+        url('../fonts/Klavika-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika Md';
+    src: url('../fonts/Klavika-Medium.woff2') format('woff2'),
+        url('../fonts/Klavika-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+body, html{
+	padding:0;
+	margin:0;
+}
+.banner-sec{
+	text-align: center;
+	color: #fff;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.banner-sec h1{
+		position: absolute;
+		left:0;
+		right: 0;
+		top:0;
+		margin: auto;
+		bottom: 0;
+		font-size: 55px;
+		height: 118px;
+		max-width: 60%;
+		font-family: 'Klavika Lt';
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
