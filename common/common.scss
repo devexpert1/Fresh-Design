@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: 'Klavika Rg';
     src: url('fonts/Klavika-Regular.woff2') format('woff2'),
@@ -29,6 +30,7 @@
     font-weight: 500;
     font-style: normal;
 }
+*/
 
 
 
@@ -36,6 +38,7 @@ body, html{
 	padding:0;
 	margin:0;
 	overflow-x: hidden;
+		font-family: Klavika;
 }
 .banner-sec{
 	text-align: center;
@@ -44,6 +47,7 @@ body, html{
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	margin-bottom: 50px;
 }
 .banner-sec h1{
 		position: absolute;
@@ -55,7 +59,7 @@ body, html{
 		font-size: 55px;
 		height: 118px;
 		max-width: 60%;
-		font-family: 'Klavika Lt';
+		font-family: Klavika;
 		font-weight: 300;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
@@ -110,11 +114,22 @@ footer ul{
 	display: block;
 }
 footer ul li{
-	opacity: .8;
 	vertical-align: middle;
 	font-weight: 300;
 	font-size: 14px;
 	margin-bottom: 7px;
+}
+footer ul li a{
+	opacity: .8;
+	color:#fff;
+	vertical-align: middle;
+	font-weight: 300;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+footer ul li a:hover{
+    color:#5966c0;
+    opacity:1;
 }
 footer ul li i.material-icons{
 	font-size: 18px;
@@ -160,11 +175,12 @@ footer .subscribe input{
 	border:0;
 	height: 35px;
 	font-weight: 300;
-	padding:10px;
+	padding:0 10px;
 	color: #333; 
 }
 footer .subscribe button{
 	background-color: #1fe8b7;
+	border:1px solid #1fe8b7;
 	font-size: 12.5px;
 	width: 40%;
 	text-transform: uppercase;
@@ -183,7 +199,8 @@ footer .subscribe button{
 
 }
 footer .subscribe button:hover{
-	background-color: #31ffcd;
+	background:none;
+	border:1px solid #1fe8b7;
 }
 footer .links ul li{
 	margin-bottom:7px;
@@ -197,8 +214,9 @@ footer .links ul li a{
 }
 footer .links ul li a:hover{
 	opacity: 1;
+	color:#5966c0;
 }
-.clearfix{
+.clearfix2{
 	clear: both;
 	width: 100%;
 }
@@ -224,25 +242,14 @@ footer .links ul li a:hover{
 }
 .btm-footer ul li a:hover{
 	opacity: 1;
+	color:#5966c0;
 }
 .btm-footer{
 	margin-top:20px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-//MAKE IT A FULL WIDTH BANNER
+// MAKE IT A FULL WIDTH BANNER
 .banner-box .container {
     max-width: 70%;
     margin: 0 auto;
@@ -255,3 +262,89 @@ footer .links ul li a:hover{
 #main-outlet {
     padding-top: 44px;
 }
+
+// Theme customize css
+
+.category-list.with-topics th{
+    text-transform:uppercase;
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+.category-list.with-topics tbody .category{
+    border-width:2px;
+}
+button#create-topic{
+    background:none;
+    text-transform:uppercase;
+    border:1px solid #2a3093;
+    color:#2a3093;
+    padding:5px 15px;
+}
+button#create-topic:hover{
+    background:#2a3093;
+    color:#fff;
+}
+.nav-pills>li.active>a, .nav-pills>li>a.active{
+    background:#e20c5e;
+}
+.nav-pills>li:hover>a, .nav-pills>li>a:hover{
+    background:none;
+    color:#2a3093;
+}
+#navigation-bar li a{
+    font-size:13px;
+    letter-spacing: .5px;
+}
+.navigation-container.ember-view ol li{
+    text-transform:capitalize;
+}
+.select-kit.combo-box.category-drop .category-drop-header{
+    padding:4px 10px;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: .5px;
+}
+.category-list.with-topics tr td:first-child:before {
+    content: '';
+    height: 10px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    z-index: 9;
+    width: 6px;
+    left: -4px;
+    top: 0;
+}
+.category-list.with-topics tr td:first-child:after {
+    content: '';
+    height: 10px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    z-index: 9;
+    width: 6px;
+    left: -4px;
+    bottom: -1px;
+}
+.category-list.with-topics tr td{
+    position:relative;
+}
+.category-list tbody .category h3{
+    font-weight:normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
